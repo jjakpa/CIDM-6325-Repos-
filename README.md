@@ -73,12 +73,3 @@ Assignment 1 also requires a separate Word document with screenshots of every pa
 
 ChatGPT/Codex assisted with reviewing and simplifying the supplied HTML, CSS, JavaScript, workflow image, and documentation. Accepted recommendations included replacing the numerical quality score with explanatory feedback and changing custom star buttons to a rating dropdown. The three-page structure was retained to demonstrate a meaningful analysis activity. Review and adapt this account to reflect all tools and assistance actually used, and explain the code in your own words in the required AI Use Statement. Do not present AI-generated code as independently student-authored work.
 
-## Assignment-provided learning references
-
-These introductory references were listed in Assignment 1; they are programming resources, not sources for the valuation thresholds:
-
-- HTML forms: https://www.w3schools.com/html/html_forms.asp
-- JavaScript functions: https://www.w3schools.com/js/js_function_intro.asp
-- DOM methods: https://www.w3schools.com/js/js_htmldom_methods.asp
-- JavaScript popups: https://www.w3schools.com/js/js_popup.asp
-- JavaScript output: https://www.w3schools.com/js/js_output.asp
