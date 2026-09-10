@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Enter three DCF assumptions and receive educational feedback.">
+  <title>Starter analysis | Mentalysis</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">Mentalysis<span>Mentorship + analysis</span></a>
+    <nav aria-label="Main navigation"><a href="index.html">Overview</a><a href="analyze.html" aria-current="page">Try analysis</a><a href="reviews.html">Reviews</a></nav>
+  </header>
+  <main id="main">
+    <section class="page-intro">
+      <p class="eyebrow">Free starter analysis</p>
+      <h1>Check your DCF assumptions.</h1>
+      <p>Use percentages from your project. The checks use illustrative teaching thresholds, not live market or sector data.</p>
+    </section>
+    <div class="two-column">
+      <section class="panel">
+        <h2>Project inputs</h2>
+        <form id="analysisForm">
+          <label for="companyName">Company name</label>
+          <input id="companyName" name="companyName" type="text" maxlength="80" placeholder="Example: Northstar Retail" required>
+          <label for="revenueGrowth">Forecast revenue growth (%)</label>
+          <input id="revenueGrowth" name="revenueGrowth" type="number" min="-50" max="100" step="0.1" placeholder="Example: 10" required>
+          <label for="discountRate">Discount rate / WACC (%)</label>
+          <input id="discountRate" name="discountRate" type="number" min="1" max="50" step="0.1" placeholder="Example: 9" required>
+          <label for="terminalGrowth">Terminal growth (%)</label>
+          <input id="terminalGrowth" name="terminalGrowth" type="number" min="-10" max="20" step="0.1" placeholder="Example: 2.5" required>
+          <div class="form-actions">
+            <button type="submit">Review assumptions</button>
+            <button class="secondary" type="reset">Clear</button>
+          </div>
+          <p class="note">Educational feedback only. Results do not establish a fair value or recommend an investment.</p>
+        </form>
+      </section>
+      <section class="panel" aria-labelledby="feedbackHeading">
+        <h2 id="feedbackHeading">Mentor feedback</h2>
+        <div id="analysisResults" role="status" aria-atomic="true">
+          <p>Submit your inputs to see feedback for each assumption.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer> Mentalysis &middot; Educational valuation guidance for finance students.</footer>
+</body>
+</html>

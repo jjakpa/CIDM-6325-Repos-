@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read sample Mentalysis reviews and add feedback.">
+  <title>Reviews and feedback | Mentalysis</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="index.html">Mentalysis<span>Mentorship + analysis</span></a>
+    <nav aria-label="Main navigation"><a href="index.html">Overview</a><a href="analyze.html">Try analysis</a><a href="reviews.html" aria-current="page">Reviews</a></nav>
+  </header>
+  <main id="main">
+    <section class="page-intro">
+      <p class="eyebrow">Reviews and feedback</p>
+      <h1>Share what helped you learn.</h1>
+      <p>Read the sample reviews, then tell us how Mentalysis could improve your valuation practice.</p>
+    </section>
+    <div class="two-column">
+      <section aria-labelledby="reviewsHeading">
+        <h2 id="reviewsHeading">Student feedback</h2>
+        <p class="note">The two reviews below are fictional examples for this prototype.</p>
+        <div id="reviewList" class="review-list">
+          <article class="panel review">
+            <h3>Avery Chen</h3>
+            <p class="rating">Rating: 5 out of 5 &middot; Sample review</p>
+            <p>The terminal growth question reminded me to explain my long-term assumptions before presenting my DCF project.</p>
+          </article>
+          <article class="panel review">
+            <h3>Mateo Rivera</h3>
+            <p class="rating">Rating: 5 out of 5 &middot; Sample review</p>
+            <p>The feedback helped me identify which assumptions needed more supporting evidence in my research.</p>
+          </article>
+        </div>
+      </section>
+      <section class="panel" aria-labelledby="formHeading">
+        <h2 id="formHeading">Add your feedback</h2>
+        <form id="reviewForm">
+          <label for="reviewerName">Your name</label>
+          <input id="reviewerName" name="reviewerName" type="text" maxlength="80" required>
+          <label for="reviewRating">Your rating</label>
+          <select id="reviewRating" name="reviewRating" required>
+            <option value="">Choose a rating</option>
+            <option value="1">1 - Not helpful</option>
+            <option value="2">2 - Slightly helpful</option>
+            <option value="3">3 - Moderately helpful</option>
+            <option value="4">4 - Helpful</option>
+            <option value="5">5 - Very helpful</option>
+          </select>
+          <label for="reviewText">Your feedback</label>
+          <textarea id="reviewText" name="reviewText" rows="5" maxlength="400" required></textarea>
+          <button type="submit">Submit feedback</button>
+          <p id="reviewMessage" role="status"></p>
+          <p class="note">Your feedback appears on this page only and is cleared when you reload or leave the page.</p>
+        </form>
+      </section>
+    </div>
+    <p class="back-link"><a href="index.html">Return to the Mentalysis overview</a></p>
+  </main>
+  <footer> Mentalysis &middot; Educational valuation guidance for finance students.</footer>
+</body>
+</html>
